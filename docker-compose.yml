@@ -21,7 +21,7 @@ services:
 
   backend:
     build:
-      context: ./backend 
+      context: .
       dockerfile: Dockerfile.backend
     container_name: portfolio-backend1
     restart: always
@@ -40,7 +40,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: .
       dockerfile: Dockerfile.frontend
     container_name: portfolio-frontend1
     restart: always
