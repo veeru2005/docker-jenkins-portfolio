@@ -4,12 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile.backend
     container_name: portfolio-backend1
-    restart: always
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/portfolio
-      SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Veeru@2005
-      SPRING_JPA_HIBERNATE_DDL_AUTO: update
     ports:
       - "8083:8080"
     networks:
