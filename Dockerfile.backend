@@ -12,9 +12,10 @@ RUN cat > src/main/resources/application.properties << 'EOF'
 server.port=8080
 
 # MySQL Database Configuration  
-spring.datasource.url=${SPRING_DATASOURCE_URL:jdbc:mysql://localhost:3306/portfolio}
-spring.datasource.username=${SPRING_DATASOURCE_USERNAME:root}
-spring.datasource.password=${SPRING_DATASOURCE_PASSWORD:Veeru@2005}
+SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/portfolio
+SPRING_DATASOURCE_USERNAME: root
+SPRING_DATASOURCE_PASSWORD: Veeru@2005
+SPRING_JPA_HIBERNATE_DDL_AUTO: update
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 
 # JPA/Hibernate Configuration
